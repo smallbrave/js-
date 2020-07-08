@@ -2,14 +2,6 @@
 
 //ES5
 function SingleDog() {}
-SingleDog.getInstance = function() {
-        var instance = null;
-        if (!instance) {
-            instance = new SingleDog();
-        }
-        return instance;
-    }
-    //使用就直接调用函数Single.getInstance();
 
 //使用闭包
 var single = (function() {
